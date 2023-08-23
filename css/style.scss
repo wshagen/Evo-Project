@@ -1,0 +1,111 @@
+// * {                                    //used to check element layout as page is built
+//   border: 1px red solid;
+// }
+
+$color1:black;                          //saves color to variable for reuse
+$color2:rgb(61, 194, 238);
+
+body {                                    //sets text color white 
+  color:$color1;
+  font-size: large;
+  
+}
+
+a {                                       //sets link text color to white
+  color:$color1;
+}
+
+
+
+.wrap {                                   //sets page layout
+  display:grid;
+  grid-template-areas:
+  "header header header"
+  "aside-one main main"
+  "aside-one main main"
+  "footer footer footer"
+  ;
+}
+
+.header {                                 //adds hover effect to links
+  grid-area: header;
+  padding-bottom: 4em;
+  :hover {
+    color:$color2;
+  }
+  
+}
+
+.card {                                   //stacks content in aside 1. work in progress for future layout
+  display:row;
+  gap: 10px;
+}
+
+
+
+
+
+
+.nav {                                   
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap:25%;
+  align-items:center;
+}
+
+.aside-one {
+  grid-area: aside-one;
+}
+
+.main {
+  grid-area: main;
+  display:flex;
+}
+
+.alignr {                                 //aligns content in main and centers text
+  padding-left:10%;
+  padding-right: 10%;
+  justify-content:center;
+}
+
+  @keyframes fadeIn {                     //creates function for fade in text in main
+  0% {opacity: 0; }
+  100% {opacity: 1;}
+}
+
+.fade-in {                                //sets class to fade in content over 3s
+  animation: fadeIn 3s ease-in;
+  @media (prefers-reduced-motion) {
+    animation: fadeIn 0s ease-in;
+    font-size: x-large;
+  }
+}
+
+
+
+
+
+@mixin gradient($start-color, $end-color, $orientation) {                 //creates mixin for gradient background color
+  background: $start-color;
+  @if $orientation == 'vertical' {
+    background: -webkit-linear-gradient(top, $start-color, $end-color);
+    background: linear-gradient(to bottom, $start-color, $end-color);
+  } @else if $orientation == 'horizontal' {
+    background: -webkit-linear-gradient(left, $start-color, $end-color);
+    background: linear-gradient(to right, $start-color, $end-color);
+  } @else {
+    background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+    background: radial-gradient(ellipse at center, $start-color, $end-color);
+  }
+}
+
+.gradient {
+  @include gradient(rgb(5, 139, 156), rgb(26, 67, 71), top left);     //chooses color and orientation of gradient background
+}
+
+.footer {
+  grid-area: footer;
+  text-align:center;
+ 
+}
+
