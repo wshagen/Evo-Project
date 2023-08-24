@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="js/bootstrap.js">
-  <meta> 
-  <title>Project 4</title>
-</head>
-<body class="wrap gradient">
- <div class="header nav">
 
-  <div class="hover">
-    <a class="active" href="#" target="_blank">Home</a>
-    <a href="./about-me.html" target="_blank">About Me</a>
-    <a href="https://www.linkedin.com/in/william-hagen-640bb319a/" target="_blank">Linked In</a>
-    <a href="#" target="_blank">Contact Us</a>
-    
-  </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
+    <meta name="Description" content="This is the Project Overview page. Here can you can see current projects/experience, links to other pages and the contact form"> 
+    <meta name="keywords" content="Project Overview, Home page, current projects, experience, contact me.">
+    <title>Project 4</title>
+  </head>
 
- 
-  </div>
+  <body class="wrap gradient">             <!--sets layout of body with grid and background color-->
+  
+    <header class="header nav">            <!--sets nav bar and header-->
 
-  <div class="aside-one">
-    <div class="card">
-      <h2>Current Projects/Experience</h2><br><br>
-      <div class="size"><img src="C:\Users\hagenw\Pictures\Odin.png" alt="logo for Odin Project"></div>
-      <caption>Full-Stack Dev Program</caption><br><br>
-      <div class="size"><img src="C:\Users\hagenw\Pictures\c1.jpg" alt="logo for C1 Course"></div>
-      <caption>C1 Software Dev Course</caption><br><br>
-      <div><img src="C:\Users\hagenw\Documents\amazon.jpg" alt="amazon logo"></div>
-      <caption>Central Flow for Amazon</caption>
-    </div>
+      <section class="hover">
+        
+        <a class="active" href="#">Home</a>
+        <a href="./about-me.html">About Me</a>
+        <a href="#">Contact Us</a>
+        <a href="https://www.linkedin.com/in/william-hagen-640bb319a/" target="_blank">Linked In</a>
+        
+      </section>
 
-  </div>
+    </header>
 
-  <main class="main"">
-    <div class="alignr"><h1>Project Overview</h1><br>
-    <p class="fade-in">This page is to showcase the knowledge I have gained so far with Software/Web Development. Here you will see some of my current projects and classes as well as a history of me and what has led me to this point in my journey. There is a space to drop contact info and ask questions.</p><br><br>
-    <h2>Get to know me</h2><br>
-    <p class="fade-in">If you would like to know more you can check out the complete list of projects I have been a part of and also connect with me on Linked In if you would like to network and maybe collaborate in the future! This journey has been a lot of fun for me so far and I look forward to seeing what I am capable of with more experiences and chances to play as we move forward. Best of luck to all of you and hope you are having as much fun as I am!!</p>
-  </div>
-    <div><img src="C:\Users\hagenw\Pictures\PRO1.jpg" alt="placeholder pic"></div>
-    
-    
+    <aside class="aside-one">             <!--side bar of experience content-->
+      
+      <section class="card">
+        
+        <h2>Current Projects/Experience</h2><br><br>
+        <div><img src="./media/Odin.png" alt="logo for Odin Project"></div>
+        <caption>Full-Stack Dev Program</caption><br><br>
+        <div><img src="./media/c1.jpg" alt="logo for C1 Course"></div>
+        <caption>C1 Software Dev Course</caption><br><br>
+        <div><img src="./media/amazon.jpg" alt="amazon logo"></div>
+        <caption>Central Flow for Amazon</caption>
+      
+      </section>
 
-  </main>
+    </aside>
 
-  <div class="footer">
-    <h2>Contact Me</h2>
-    <form action="/example_action.html">
-      <label for="fname">First Name:</label><br>
-      <input type="text" id="fname" name="fname"><br><br>
-      <label for="lname">Last Name:</label><br>
-      <input type="text" id="lname" name="lname"><br><br>
-      <label for="phnum">Phone Number</label><br>
-      <input type="tel" id="phnum" name="phnum"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
-      <label for="email">Email</label><br>
-      <input type="email" id="email" name="email"><br><br>
-      <input type="submit" value="Submit">
-    </form>
-    <p>&copy; Demo page. All Rights Reserved</p>
+    <main class="main"">                   <!--Main body with pic and overview-->
+                      
+      <section class="alignr"><h1>Project Overview</h1><br>
+        <p class="fade-in">This page is to showcase the knowledge I have gained so far with Software/Web Development. Here you will see some of my current projects and classes as well as a history of me and what has led me to this point in my journey. There is a space to drop contact info and ask questions.</p><br><br>
+        <h2>Get to know me</h2><br>
+        <p class="fade-in">If you would like to know more you can check out the complete list of projects I have been a part of and also connect with me on Linked In if you would like to network and maybe collaborate in the future! This journey has been a lot of fun for me so far and I look forward to seeing what I am capable of with more experiences and chances to play as we move forward. Best of luck to all of you and hope you are having as much fun as I am!!</p>
+  
+      </section>
+      
+      <div><img src="./media/PRO1.jpg" alt="placeholder pic"></div>
+      
+    </main>
 
-  </div>
-</body>
+    <footer class="footer">               <!--Footer with contact form-->
+      <h2>Contact Me</h2>
+      <form action="/example_action.html">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="phnum">Phone Number</label><br>
+        <input type="tel" id="phnum" name="phnum"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <p>&copy; Demo page. All Rights Reserved</p>
+
+    </footer>
+  </body>
 </html>
