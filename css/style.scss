@@ -5,6 +5,7 @@
 $color1:white;                          //saves color to variable for reuse
 $color2:rgb(61, 194, 238);
 
+
 body {                                    //sets text color white 
   color:$color1;
   font-size: large;
@@ -87,10 +88,11 @@ a {                                       //sets link text color to white
 }
 
 p {
+  border-radius: 20px 30px;
   border: 1px solid;
   padding: 2em;
-  background-color: rgb(4, 138, 161);
-}
+  background-color: $color2;
+  }
 
 
 
@@ -113,6 +115,7 @@ p {
 .gradient {
   @include gradient(rgb(5, 139, 156), rgb(26, 67, 71), top left);     //chooses color and orientation of gradient background
 }
+
 
 .footer {
   grid-area: footer;

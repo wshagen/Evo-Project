@@ -74,9 +74,10 @@ a {
 }
 
 p {
+  border-radius: 20px 30px;
   border: 1px solid;
   padding: 2em;
-  background-color: rgb(4, 138, 161);
+  background-color: rgb(61, 194, 238);
 }
 
 .gradient {
