@@ -13,8 +13,10 @@ a {
 }
 
 .header {
+  border-radius: 20px;
+  background: rgb(53, 15, 99);
   grid-area: header;
-  padding-bottom: 4em;
+  padding: 1rem;
 }
 .header :hover {
   color: rgb(61, 194, 238);
@@ -33,15 +35,9 @@ a {
      object-fit: cover;
 }
 
-.nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 25%;
-  align-items: center;
-}
-
 .aside-one {
   grid-area: aside-one;
+  padding-left: 7%;
 }
 
 .main {
@@ -53,6 +49,11 @@ a {
   padding-left: 10%;
   padding-right: 10%;
   justify-content: center;
+}
+
+.aligni {
+  padding-top: 2rem;
+  padding-right: 2%;
 }
 
 @keyframes fadeIn {
@@ -74,15 +75,15 @@ a {
 }
 
 p {
-  border-radius: 20px 30px;
+  border-radius: 10px 30px;
   border: 1px solid;
   padding: 2em;
-  background-color: rgb(61, 194, 238);
+  background-color: rgb(53, 15, 99);
 }
 
 .gradient {
-  background: rgb(5, 139, 156);
-  background: radial-gradient(ellipse at center, rgb(5, 139, 156), rgb(26, 67, 71));
+  background: rgb(139, 223, 235);
+  background: radial-gradient(ellipse at center, rgb(139, 223, 235), rgb(52, 20, 90));
 }
 
 .footer {

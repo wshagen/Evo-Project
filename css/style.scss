@@ -4,7 +4,7 @@
 
 $color1:white;                          //saves color to variable for reuse
 $color2:rgb(61, 194, 238);
-
+$color3:rgb(53, 15, 99);
 
 body {                                    //sets text color white 
   color:$color1;
@@ -12,8 +12,8 @@ body {                                    //sets text color white
   
 }
 
-a {                                       //sets link text color to white
-  color:$color1;
+a {   
+  color:$color1;                                    //sets link text color to white
 }
 
 
@@ -28,14 +28,15 @@ a {                                       //sets link text color to white
   ;
 }
 
-.header {                                 //adds hover effect to links
+.header {  
+  border-radius: 20px;
+  background: $color3;                               //adds hover effect to links
   grid-area: header;
-  padding-bottom: 4em;
-  :hover {
-    color:$color2;
-  }
-  
-}
+  padding: 1rem;
+    :hover {
+      color:$color2;
+   }
+ }
 
 
 
@@ -51,15 +52,11 @@ a {                                       //sets link text color to white
   object-fit: cover;
 }
 
-.nav {                                   
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap:25%;
-  align-items:center;
-}
+
 
 .aside-one {
   grid-area: aside-one;
+  padding-left: 7%;
   
 }
 
@@ -72,6 +69,11 @@ a {                                       //sets link text color to white
   padding-left:10%;
   padding-right: 10%;
   justify-content:center;
+}
+
+.aligni {
+  padding-top: 2rem;
+  padding-right: 2%;
 }
 
   @keyframes fadeIn {                     //creates function for fade in text in main
@@ -88,10 +90,10 @@ a {                                       //sets link text color to white
 }
 
 p {
-  border-radius: 20px 30px;
+  border-radius: 10px 30px;
   border: 1px solid;
   padding: 2em;
-  background-color: $color2;
+  background-color: $color3;
   }
 
 
@@ -113,7 +115,7 @@ p {
 }
 
 .gradient {
-  @include gradient(rgb(5, 139, 156), rgb(26, 67, 71), top left);     //chooses color and orientation of gradient background
+  @include gradient(rgb(139, 223, 235), rgb(52, 20, 90), top left);     //chooses color and orientation of gradient background
 }
 
 
