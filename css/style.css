@@ -20,9 +20,17 @@ a {
   color: rgb(61, 194, 238);
 }
 
-.card {
-  display: row;
-  gap: 10px;
+.parent {
+  width: 19vw;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.parent > img {
+  height: 105px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .nav {
@@ -63,6 +71,12 @@ a {
     animation: fadeIn 0s ease-in;
     font-size: x-large;
   }
+}
+
+p {
+  border: 1px solid;
+  padding: 2em;
+  background-color: rgb(4, 138, 161);
 }
 
 .gradient {
