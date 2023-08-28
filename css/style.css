@@ -79,6 +79,7 @@ p {
   border: 1px solid;
   padding: 2em;
   background-color: rgb(53, 15, 99);
+  text-align: center;
 }
 
 .gradient {
@@ -88,5 +89,4 @@ p {
 
 .footer {
   grid-area: footer;
-  text-align: center;
 }/*# sourceMappingURL=style.css.map */
