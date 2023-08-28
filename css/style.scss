@@ -5,6 +5,7 @@
 $color1:white;                          //saves color to variable for reuse
 $color2:rgb(61, 194, 238);
 $color3:rgb(53, 15, 99);
+$color4:rgb(142, 247, 138);
 
 body {                                    //sets text color white 
   color:$color1;
@@ -34,7 +35,7 @@ a {
   grid-area: header;
   padding: 1rem;
     :hover {
-      color:$color2;
+      color:$color4;
    }
  }
 
@@ -97,7 +98,18 @@ p {
   text-align: center;
   }
 
+  p::first-line {
+    color: $color4;
+  }
 
+  h1 {
+    color: $color4;
+  }
+  
+  h2 {
+    color: $color4;
+  }
+  
 
 
 

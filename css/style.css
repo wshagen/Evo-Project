@@ -19,7 +19,7 @@ a {
   padding: 1rem;
 }
 .header :hover {
-  color: rgb(61, 194, 238);
+  color: rgb(142, 247, 138);
 }
 
 .parent {
@@ -80,6 +80,18 @@ p {
   padding: 2em;
   background-color: rgb(53, 15, 99);
   text-align: center;
+}
+
+p::first-line {
+  color: rgb(142, 247, 138);
+}
+
+h1 {
+  color: rgb(142, 247, 138);
+}
+
+h2 {
+  color: rgb(142, 247, 138);
 }
 
 .gradient {
