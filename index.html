@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/bootstrap.js">
+    
     <meta name="Description" content="This is the Project Overview page. Here can you can see current projects/experience, links to other pages and the contact form"> 
     <meta name="keywords" content="Project Overview, Home page, current projects, experience, contact me.">
     <title>Project 4</title>
@@ -14,7 +14,8 @@
 
   <body class="wrap gradient">             <!--sets layout of body with grid and background color-->
   
-    <header class="header">            <!--sets nav bar and header-->
+    <header class="header">           <!--sets nav bar and header-->
+     
 
       <section class="hover header">
         
@@ -24,7 +25,17 @@
         <a href="./projects.html">Projects</a>
         <a href="https://www.linkedin.com/in/william-hagen-640bb319a/" target="_blank">Linked In</a>
         
+        <h1>Dark/Light Mode Toggle</h1>
+        <div class="container">
+          <h2 class="mode-status">Current Mode: Light</h2>
+          <label class="toggle-switch">
+            <input type="checkbox" id="mode-toggle">
+            <span class="slider"></span>
+          </label>
+        </div>
       </section>
+
+      
 
     </header>
 
@@ -73,5 +84,6 @@
       <p>&copy; Demo page. All Rights Reserved</p>
 
     </footer>
+    <script src = "js/bootstrap.js"></script>
   </body>
 </html>
