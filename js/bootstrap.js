@@ -14,7 +14,7 @@ function toggleMode() {
   const modeMessage = body.classList.contains('dark-mode') ?
     'Dark Mode' 
     : "Light Mode"
-
+  body.classList.toggle('gradient');
   modeStatus.innerText = "Currently in " + modeMessage;
 }
 

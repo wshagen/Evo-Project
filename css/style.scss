@@ -9,9 +9,6 @@ $color1:white;                          //saves color to variable for reuse
 $color2:rgb(61, 194, 238);
 $color3:rgb(180, 180, 181);
 $color4:rgb(12, 90, 10);
-.gradient {
-  @include gradient(rgb(226, 239, 241), rgb(96, 94, 99), top left);     //chooses color and orientation of gradient background
-}
 
 
 @mixin gradient($start-color, $end-color, $orientation) {                 //creates mixin for gradient background color
@@ -26,6 +23,10 @@ $color4:rgb(12, 90, 10);
     background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
     background: radial-gradient(ellipse at center, $start-color, $end-color);
   }
+}
+
+.gradient {
+  @include gradient(rgb(226, 239, 241), rgb(96, 94, 99), top left);     //chooses color and orientation of gradient background
 }
 
 .wrap {                                   //sets page layout
@@ -44,6 +45,12 @@ $color4:rgb(12, 90, 10);
   padding:0;
 }
 
+.dark-mode {
+  background-color:black;
+  color: #f0f0f0;
+  transition: all 0.4s ease-in;
+}
+
 body {  
   font-family: "Poppins", sans-serif;                                  //sets text color white 
   color:$color1;
@@ -51,11 +58,6 @@ body {
   transition: all 0.4s ease-in;
 }
 
-/*.dark-mode {
-  background-color:darkblue;
-  color: #f0f0f0;
-  transition: all 0.4s ease-in;
-}*/
 
 .toggle-switch {
   position: relative;
@@ -97,7 +99,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: $color4;
 }
 
 input:focus + .slider {
