@@ -6,9 +6,8 @@
 
 
 $color1:white;                          //saves color to variable for reuse
-$color2:rgb(61, 194, 238);
-$color3:rgb(180, 180, 181);
-$color4:rgb(12, 90, 10);
+$color2:rgb(35, 35, 250);
+$color3: rgb(212, 144, 233);
 
 
 @mixin gradient($start-color, $end-color, $orientation) {                 //creates mixin for gradient background color
@@ -51,11 +50,16 @@ $color4:rgb(12, 90, 10);
   transition: all 0.4s ease-in;
 }
 
+.paradark {
+  background-color: rgb(48, 47, 47);
+}
+
 body {  
   font-family: "Poppins", sans-serif;                                  //sets text color white 
-  color:$color1;
+  color:black;
   font-size: large;
   transition: all 0.4s ease-in;
+  
 }
 
 
@@ -81,7 +85,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: black;
   transition: all 0.4s ease-in;
   border-radius: 2.13rem;
 }
@@ -99,34 +103,43 @@ body {
 }
 
 input:checked + .slider {
-  background-color: $color4;
+  background-color: #ccc;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 2px #2196f3;
+  box-shadow: 0 0 2px ;
 }
 
 input:checked + .slider:before {
   transform: translateX(1.63rem);
 }
 
-
-
-
-a {   
-  color:$color1;                                    //sets link text color to white
-}
-
-
-
 .header {  
   border-radius: 20px;
-  background: $color3;                               //adds hover effect to links
+  background: lightgrey;                              
   grid-area: header;
   padding: 1rem;
-    :hover {
-      color:$color4;
-   }
+  color: black;
+  a {
+    color: black;
+  }
+  a:hover {                                               //adds hover effect to links
+    color: rgb(102, 178, 221);
+ }    
+ }
+
+ .darkheader {  
+  border-radius: 20px;
+  background: rgb(48, 47, 47);                         
+  grid-area: header;
+  padding: 1rem;
+  color: white;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: rgb(102, 178, 221);
+ }    
  }
 
 
@@ -184,22 +197,10 @@ p {
   border-radius: 10px 30px;
   border: 1px solid;
   padding: 2em;
-  background-color: $color3;
+  background-color: lightgrey;
   text-align: center;
   }
 
-  p::first-line {
-    color: $color4;
-  }
-
-  h1 {
-    color: $color4;
-  }
-  
-  h2 {
-    color: $color4;
-  }
-  
 .footer {
   grid-area: footer;
 }
