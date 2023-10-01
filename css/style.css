@@ -112,16 +112,17 @@ input:checked + .slider:before {
 }
 
 .parent {
-  width: 19vw;
+  max-width: 15vw;
   height: 80vh;
-  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .parent > img {
   height: 105px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .aside-one {
@@ -154,7 +155,7 @@ input:checked + .slider:before {
   }
 }
 .fade-in {
-  animation: fadeIn 3s ease-in;
+  animation: fadeIn 0.3s ease-in;
 }
 @media (prefers-reduced-motion) {
   .fade-in {

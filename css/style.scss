@@ -145,15 +145,15 @@ input:checked + .slider:before {
 
 
 .parent {
-  width: 19vw;
+  max-width: 15vw;
   height: 80vh;
-  overflow: hidden;
+  object-fit: contain;
 }
 
 .parent > img {
   height: 105px;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 
@@ -186,7 +186,7 @@ input:checked + .slider:before {
 }
 
 .fade-in {                                //sets class to fade in content over 3s
-  animation: fadeIn 3s ease-in;
+  animation: fadeIn .3s ease-in;
   @media (prefers-reduced-motion) {
     animation: fadeIn 0s ease-in;
     font-size: x-large;
