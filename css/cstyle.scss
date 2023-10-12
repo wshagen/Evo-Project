@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+$color1:white;                          //saves color to variable for reuse
+$color2:rgb(35, 35, 250);
+$color3: rgb(212, 144, 233);
+
+
+@mixin gradient($start-color, $end-color, $orientation) {                 //creates mixin for gradient background color
+  background: $start-color;
+  @if $orientation == 'vertical' {
+    background: -webkit-linear-gradient(top, $start-color, $end-color);
+    background: linear-gradient(to bottom, $start-color, $end-color);
+  } @else if $orientation == 'horizontal' {
+    background: -webkit-linear-gradient(left, $start-color, $end-color);
+    background: linear-gradient(to right, $start-color, $end-color);
+  } @else {
+    background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+    background: radial-gradient(ellipse at center, $start-color, $end-color);
+  }
+}
+
+.gradient {
+  @include gradient(rgb(226, 239, 241), rgb(96, 94, 99), top left);     //chooses color and orientation of gradient background
+}
+
+.header {  
+  border-radius: 20px;
+  background: lightgrey;                              
+  grid-area: header;
+  padding: 1rem;
+  color: black;
+  a {
+    color: black;
+  }
+  a:hover {                                               //adds hover effect to links
+    color: rgb(102, 178, 221);
+ }    
+ }
+
+.contact {
+  font-size: x-large;
+  margin-top: 4rem;
+  text-align: center;
+}
