@@ -13,13 +13,14 @@
 }
 .header a {
   color: black;
+  font-size: xx-large;
 }
 .header a:hover {
   color: rgb(102, 178, 221);
 }
 
 .contact {
-  font-size: x-large;
+  font-size: xx-large;
   margin-top: 4rem;
   text-align: center;
 }/*# sourceMappingURL=cstyle.css.map */

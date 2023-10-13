@@ -88,10 +88,12 @@ input:checked + .slider:before {
   background: lightgrey;
   grid-area: header;
   padding: 1rem;
+  margin-bottom: 10%;
   color: black;
 }
 .header a {
   color: black;
+  font-size: x-large;
 }
 .header a:hover {
   color: rgb(102, 178, 221);
@@ -102,10 +104,12 @@ input:checked + .slider:before {
   background: rgb(48, 47, 47);
   grid-area: header;
   padding: 1rem;
+  margin-bottom: 10%;
   color: white;
 }
 .darkheader a {
   color: white;
+  font-size: x-large;
 }
 .darkheader a:hover {
   color: rgb(102, 178, 221);

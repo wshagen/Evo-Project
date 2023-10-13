@@ -119,9 +119,11 @@ input:checked + .slider:before {
   background: lightgrey;                              
   grid-area: header;
   padding: 1rem;
+  margin-bottom: 10%;
   color: black;
   a {
     color: black;
+    font-size: x-large;
   }
   a:hover {                                               //adds hover effect to links
     color: rgb(102, 178, 221);
@@ -133,9 +135,11 @@ input:checked + .slider:before {
   background: rgb(48, 47, 47);                         
   grid-area: header;
   padding: 1rem;
+  margin-bottom: 10%;
   color: white;
   a {
     color: white;
+    font-size: x-large;
   }
   a:hover {
     color: rgb(102, 178, 221);
