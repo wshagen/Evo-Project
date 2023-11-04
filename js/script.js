@@ -13,8 +13,8 @@ function toggleMode() {
   body.classList.toggle('dark-mode');
 
   const modeMessage = body.classList.contains('dark-mode') ?
-    'Dark Mode' 
-    : "Light Mode"
+    'Dark' 
+    : "Light"
   body.classList.toggle('gradient');
   
   for(const i of para) {
@@ -22,7 +22,7 @@ function toggleMode() {
   }
   header.classList.toggle('header');
   header.classList.toggle('darkheader');
-  modeStatus.innerText = "Currently in " + modeMessage;
+  modeStatus.innerText = "Current Mode: " + modeMessage;
 }
 
 modeToggle.addEventListener('click', toggleMode);
