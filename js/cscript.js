@@ -95,7 +95,16 @@ const handleChange = () => {
 // Define a function to handle form submission
 const handleSubmit = (e) => {
   // Prevent the default form submission behavior
-  e.preventDefault()
+  e.preventDefault();
+
+  const data = new FormData(e.target);
+
+  const value = Object.fromEntries(data.entries());
+
+  const jsonValue = JSON.stringify(value);
+
+
+  console.log({ jsonValue });
 
   // If all form elements are valid after the form submission, display a success message, reset the form, and disable the submit button
   if (allInputsValid()) {
